@@ -1,4 +1,10 @@
 import { createApp } from "vue"
-import App from "./App.vue"
+import ElementPlus from "element-plus"
 
-createApp(App).mount("#app")
+import App from "./App.vue"
+// reset style sheet
+import "@/styles/reset.scss"
+
+const app = createApp(App)
+
+app.use(ElementPlus).mount("#app")
