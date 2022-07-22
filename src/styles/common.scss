@@ -1,0 +1,20 @@
+/* 常用 flex */
+.flex {
+  display: flex;
+  align-items: center;
+
+  &-center {
+    justify-content: center;
+  }
+
+  &-between {
+    justify-content: space-between;
+  }
+}
+
+/* 单行省略 */
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
