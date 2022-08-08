@@ -27,6 +27,12 @@ const routes: RouteRecordRaw[] = [
 			title: "登录页",
 			key: "login"
 		}
+	},
+	...routerArray,
+	{
+		// 找不到路由重定向到404页面
+		path: "/:pathMatch(.*)",
+		redirect: { name: "404" }
 	}
 ]
 

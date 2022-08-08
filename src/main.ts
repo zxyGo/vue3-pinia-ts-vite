@@ -8,8 +8,11 @@ import "@/styles/common.scss"
 import ElementPlus from "element-plus"
 import "element-plus/dist/index.css"
 
+// 添加自定义指令
+import directive from "@/directives/index.ts"
+
 import App from "./App.vue"
 
 const app = createApp(App)
 
-app.use(ElementPlus).mount("#app")
+app.use(ElementPlus).use(directive).mount("#app")
